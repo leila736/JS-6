@@ -3,6 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <title>فرم ثبت‌نام</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    input {
+      padding: 8px;
+      margin: 5px;
+    }
+
+    button {
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  </style>
+  
   
 </head>
 <body>
@@ -35,7 +59,7 @@
     const apiUserList = document.getElementById("apiUserList");
     const loadApiBtn = document.getElementById("loadApiBtn");
 
-    
+
     // وقتی دکمه ثبت‌نام کلیک شد:
     submitBtn.addEventListener("click", () => {
       const name = nameInput.value.trim();
