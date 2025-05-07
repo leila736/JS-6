@@ -25,6 +25,33 @@
   <button id="loadApiBtn">بارگذاری کاربران</button>
   <ul id="apiUserList"></ul>
   
+
+  <script>
+    
+
+    // وقتی دکمه ثبت‌نام کلیک شد:
+    submitBtn.addEventListener("click", () => {
+      const name = nameInput.value.trim();
+      const email = emailInput.value.trim();
+
+      if (name === "" || email === "") {
+        alert("لطفاً نام و ایمیل را وارد کنید.");
+        return;
+      }
+
+      const li = document.createElement("li");
+      li.innerText = `${name} - ${email}`;
+      userList.appendChild(li);
+
+      // پاک کردن فیلدها
+      nameInput.value = "";
+      emailInput.value = "";
+    });
+
+    
+    
+  </script>
+  
 </body>
 </html>
 
